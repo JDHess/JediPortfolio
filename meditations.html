@@ -35,12 +35,21 @@
       <!--main content start-->
       <div id="main">
          <!--top nav start--> 
-         <div style="position: fixed; background-color: rgb(235, 222, 169); height: 75px; width: 100%;padding: 10px; z-index: 1;">
+         <div style="position: fixed;  height: 75px; width: 100%;padding: 10px; z-index: 1;">
             <button class="openbtn" onclick="openNav()">Menu</button>
             <button class="openbtn" href="javascript:void(0)" onclick="closeNav()">X</button>
-            <a href="#breathmantra">Breath Mantras</a>
-            <a href="#Tao">Tao Gryphon</a>
-            <a href="#Buddha">Buddhist Meditations</a>
+            <div class="dropdown">
+              <br>
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown button
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#Tao">Tao Gryphon</a></li>
+                <li><a class="dropdown-item" href="#breathmantra">Breath-Mantras</a></li>
+                <li><a class="dropdown-item" href="#Buddha">Buddhist Meditations</a></li>
+              </ul>
+            </div>
+            
          </div>
           <!--top nav end--> 
           <!--title section start-->
@@ -143,6 +152,7 @@
               </div> 
         </section> 
 
+       
 
 </section>
 <!--Start skills section-->
